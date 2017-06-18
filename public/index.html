@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My Chat</title>
+		<link rel="stylesheet" type="text/css" href="/public/style/style.css"/>
+		<!--link rel="icon" type="image/ico" href="http://webmaster.org.il/favicon.ico" /-->
+
+	</head>
+	<body>
+		<div id="appBox">
+			<p id="userName"> Hello, </p>
+			
+			<div id="chatBox">
+				<p id="onlineUsers"></p>
+				<ul id="msgList"></ul>
+			</div>
+
+			<form name="message">
+				<input id="msgBox" name="msgBox" type="text" autocomplete="off" autofocus/>
+				<input id="sbmBtn" name="sbmBtn" type="submit" value="Send" />
+			</form>
+		</div>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script><!--Using socket.io as an external library. Used to create the realtime session with the server.-->
+		<script type="text/javascript" src="/public/script/client-script.js">
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "Gamitee_chat_task",
+  "version": "0.0.1",
+  "description": "Chat task for Gamitee",
+  "dependencies": {
+    "aws-sdk": "^2.72.0",
+    "express": "^4.15.2",
+    "socket.io": "^2.0.3"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
